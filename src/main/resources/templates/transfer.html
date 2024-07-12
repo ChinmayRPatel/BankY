@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Transfer</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+<body>
+<h1>Transfer</h1>
+<form action="#" th:action="@{/accounts/transfer}" method="post">
+    <label>From Account Number: <input type="text" name="fromAccountNumber" /></label><br>
+    <label>To Account Number: <input type="text" name="toAccountNumber" /></label><br>
+    <label>Amount: <input type="number" name="amount" /></label><br>
+    <button type="submit">Transfer</button>
+</form>
+</body>
+</html>

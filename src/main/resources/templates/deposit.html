@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Deposit</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+<body>
+<h1>Deposit</h1>
+<form action="#" th:action="@{/accounts/deposit}" method="post">
+    <label>Account Number: <input type="text" name="accountNumber" /></label><br>
+    <label>Amount: <input type="number" name="amount" /></label><br>
+    <button type="submit">Deposit</button>
+</form>
+</body>
+</html>

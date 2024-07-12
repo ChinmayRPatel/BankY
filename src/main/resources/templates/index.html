@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>BankY - Accounts</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+<body>
+<h1>Accounts</h1>
+<table>
+    <tr>
+        <th>Account Number</th>
+        <th>Account Holder Name</th>
+        <th>Balance</th>
+    </tr>
+    <tr th:each="account : ${accounts}">
+        <td th:text="${account.accountNumber}"></td>
+        <td th:text="${account.accountHolderName}"></td>
+        <td th:text="${account.balance}"></td>
+    </tr>
+</table>
+<a href="/accounts/create">Create Account</a>
+<a href="/accounts/deposit">Deposit</a>
+<a href="/accounts/withdraw">Withdraw</a>
+<a href="/accounts/transfer">Transfer</a>
+<a href="/accounts/createnewacc">Create New account</a>
+
+</body>
+</html>
