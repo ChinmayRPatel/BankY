@@ -1,0 +1,59 @@
+BankY
+BankY is a simulation of a basic banking system that allows users to create accounts, deposit and withdraw funds, and transfer funds between accounts. This project demonstrates fundamental concepts of object-oriented programming, data persistence, and basic transaction handling using Spring Boot and Thymeleaf.
+
+Features
+Create new accounts with account number, account holder name, and initial balance.
+Deposit funds into accounts.
+Withdraw funds from accounts.
+Transfer funds between accounts.
+View all accounts and their details.
+Technologies Used
+Java 17
+Spring Boot 3.3.1
+Spring Data JPA
+Thymeleaf
+MySQL
+Lombok
+Prerequisites
+JDK 17
+Maven
+MySQL
+Setup and Running
+Clone the repository:
+
+bash
+Copy code
+git clone https://github.com/yourusername/BankY.git
+cd BankY
+Configure the database:
+
+Update src/main/resources/application.properties with your MySQL database credentials.
+properties
+Copy code
+spring.datasource.url=jdbc:mysql://localhost:3306/banky
+spring.datasource.username=your_username
+spring.datasource.password=your_password
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.database-platform=org.hibernate.dialect.MySQLDialect
+Build and run the application:
+
+bash
+Copy code
+mvn clean install
+mvn spring-boot:run
+Access the application:
+
+Open your browser and go to http://localhost:8080.
+Usage
+Create a new account:
+
+Navigate to http://localhost:8080/accounts/create.
+Fill in the account number, account holder name, and initial balance, then submit the form.
+Deposit, Withdraw, Transfer funds:
+
+Implement additional endpoints and UI forms to handle these functionalities.
+View all accounts:
+
+Navigate to http://localhost:8080/accounts to view the list of all accounts.
+Contributing
+Contributions are welcome! Please fork this repository and submit a pull request for any improvements or bug fixes.
